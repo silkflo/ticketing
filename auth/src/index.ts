@@ -3,7 +3,9 @@ import { app } from './app';
 
 const start = async () => {
   //by the error check , it tell typescrit that the env is not undefined but string
+
   console.log('Starting up...');
+
 
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
